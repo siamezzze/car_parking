@@ -9,7 +9,7 @@ private:
     //QPainter * mypainter;
     int width = 40;
     int height = 80;
-    int x, y;
+    double x, y;
     qreal angle;
     int rad;
     qreal d_rotate;

@@ -7,13 +7,12 @@ inline double degreeToRads(double degree)
     return degree*M_PI/180;
 }
 
-
 int car::getX(){
-    return this->x;
+    return static_cast<int>(this->x);
 }
 
 int car::getY(){
-    return this->y;
+    return static_cast<int>(this->y);
 }
 
 qreal car::getAngle(){
