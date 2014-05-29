@@ -5,7 +5,7 @@
 #include <QDebug>
 #include <cmath>
 
-QPaintWidget::QPaintWidget(QWidget * parent) : QWidget(parent),c(200,300,15,0), m(QRect(10,10,100,100),5, 500, 600){
+QPaintWidget::QPaintWidget(QWidget * parent) : QWidget(parent),m(10, parent->width(), parent->height()), c(m){
 
 }
 

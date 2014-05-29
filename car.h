@@ -2,6 +2,7 @@
 #define CAR_H
 
 #include <QRect>
+#include "map.h"
 
 class car
 {
@@ -15,6 +16,7 @@ private:
     qreal d_rotate;
 public:
     car(int x0, int y0, int angle0, int rad0):x(x0),y(y0),angle(angle0), rad(rad0){ }
+    car(map m);
 
     int getX();
     int getY();

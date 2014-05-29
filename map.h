@@ -13,9 +13,10 @@ class map
 public:
     map(QRect goal0, int width = 1011, int height = 631):goal(goal0), border(0,0,width,height) {}
     map(QVector<QRect> obstacles0, QRect goal0, int width = 1011, int height = 631):obstacles(obstacles0),goal(goal0), border(0,0,width,height){ }
-    map(QRect goal0, int nmbObstacles, int width = 1011, int height = 631);
+    map(int nmbObstacles, int width = 1011, int height = 631);
     QVector<QRect> getObstacles();
     QRect getGoal();
+    QRect getBorder();
 };
 
 #endif // MAP_H

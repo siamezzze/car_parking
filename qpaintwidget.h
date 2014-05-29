@@ -15,8 +15,8 @@ public:
     void keyPressEvent(QKeyEvent *e);
 protected:
     void paintEvent(QPaintEvent *);
-    car c;
     map m;
+    car c;
 
 };
 
